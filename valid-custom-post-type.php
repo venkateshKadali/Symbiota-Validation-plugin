@@ -61,6 +61,7 @@ function valid_shortcode_function($attr, $content){
         }
 </script>
  <body>   
+
     <form name="newProfile" id="newProfile" action="../wp-content/plugins/valid/update.php" method="post" onsubmit="return validateform(this);">
         <?php
 
