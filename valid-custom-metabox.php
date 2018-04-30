@@ -3,9 +3,9 @@ function valid_add_custom_metabox(){
 
 	add_meta_box(
 		'valid_meta',
-		'Validation',
+		'Symbiota Validation',
 		'validation_meta_callback',
-		'validation',
+		'symbiota_validation',
 		'normal',
 		'high'
 	);

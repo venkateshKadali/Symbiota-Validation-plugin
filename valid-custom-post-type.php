@@ -195,8 +195,8 @@ function valid_shortcode_function($attr, $content){
 <?php
 
     function valid_post_type(){	
-    	$singular = __('Validation');
-    	$plural = __('Validations');
+    	$singular = __('Symbiota Validation');
+    	$plural = __('Symbiota Validation');
     	$slug1 = str_replace( ' ', '_', strtolower( $singular ) );
 
     	$labels = array(
@@ -235,7 +235,7 @@ function valid_shortcode_function($attr, $content){
     		'map_meta_cap'        => true,
 	        // 'capabilities' => array(),
     		'rewrite'             => array( 
-    			'slug' => 'validation',
+    			'slug' => 'symbiota_validation',
     			'with_front' => true,
     			'pages' => true,
     			'feeds' => true,
@@ -252,8 +252,8 @@ function valid_shortcode_function($attr, $content){
     }
     add_action('init', 'valid_post_type');
 
-    add_filter('manage_edit-validation_columns', 'valid_set_columns');
-    add_action('manage_validation_posts_custom_column', 'valid_custom_column', 10, 2);
+    add_filter('manage_edit-symbiota_validation_columns', 'valid_set_columns');
+    add_action('manage_symbiota_validation_posts_custom_column', 'valid_custom_column', 10, 2);
 
     function valid_set_columns($columns) {
         return $columns
